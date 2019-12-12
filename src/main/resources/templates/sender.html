@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .masthead{
+            height: 100vh;
+            min-height: 500px;
+            background-image: url("http://printologia.pl/wp-content/uploads/2017/09/uniwersalny-kolor-niebieski-jakgo-wykorzystac-w-projektowaniu-materialow-reklamowych-1140x600.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .form-group{
+            color: white;
+        }
+        .section-content{
+            color: white;
+            align-items: center;
+            text-align: center;
+            height: 100px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body class="masthead">
+
+
+<section id="contact">
+    <div class="section-content">
+        <h3>Example email sender</h3>
+        <h4>Send sample Email to your frend</h4>
+    </div>
+
+    <div class="contact-section">
+        <div class="container">
+            <form action="/send" method="post">
+            <div class="col-md-6 from-line">
+                <div class="form-group">
+                    <label for="exampleInputEmail">Email address</label>
+                    <input type="email" name="address" class="form-control" id="exampleInputEmail" placeholder="Enter email address">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Enter your subject" name="subject">
+                </div>
+
+                <div>
+                    <a href="/">
+                        <button type="button" class="btn btn-default">back to home</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="description">Message</label>
+                    <textarea class="form-control" name="body" id="description" cols="30" rows="10" placeholder="Enter your Massage"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-default">Send Message</button>
+                </div>
+            </div>
+
+
+            </form>
+        </div>
+    </div>
+
+
+</section>
+</body>
+</html>

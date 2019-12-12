@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Email sender</title>
+    <style>
+        .masthead{
+            height: 100vh;
+            min-height: 500px;
+            background-image: url("http://printologia.pl/wp-content/uploads/2017/09/uniwersalny-kolor-niebieski-jakgo-wykorzystac-w-projektowaniu-materialow-reklamowych-1140x600.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .content-header{
+            color: white;
+            font-size: 30px;
+        }
+        .content{
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" id="bootstrap-css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<header class="masthead">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+                <h1 th:text="${greet}"></h1>
+                <h3 class="font-weight-light content">Welcome to simple email sender. <span class="content-header">Enjoy!</span></h3>
+                <a href="/sender"><p class="lead content">Click me end send your email</p></a>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+</body>
+</html>
